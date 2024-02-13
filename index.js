@@ -1,5 +1,5 @@
 import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
-import {setInner,addChild } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
+import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 
 
 get("https://api.github.com/repos/repoulbi/sk/git/trees/main",renderHTML);
@@ -8,6 +8,7 @@ function renderHTML(result){
     let lists=result.tree;
     console.log(lists);
     lists.forEach(isiRow);
+    hide("loading");
 }
 
 function isiRow(tree){

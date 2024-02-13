@@ -11,6 +11,7 @@ get(url,renderHTML);
 function renderHTML(result){
     console.log(result);
     result.forEach(isiRow);
+    hide("loading");
 }
 
 function isiRow(tree){
