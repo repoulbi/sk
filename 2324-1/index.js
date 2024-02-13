@@ -5,6 +5,7 @@ import {setInner,addChild } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.
 let path=window.location.pathname.replace("/sk", "");
 //let path = path.replace("/sk", "");
 let url = "https://api.github.com/repos/repoulbi/sk/contents/"+path;
+const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 
 get(url,renderHTML);
 
@@ -15,12 +16,13 @@ function renderHTML(result){
 
 function isiRow(tree){
     if (tree.name.includes(".pdf")){
-        addListDir("dirlist",tree.name);
+        let url=urlPDFViewer+atob("/sk/"+tree.path);
+        addListDir("dirlist",tree.name,url);
     }
 
 }
 
-function addListDir(idlist,dirname){
+function addListDir(idlist,dirname,url){
     // Create a new <div> element
     var newDiv = document.createElement('div');
 
@@ -34,7 +36,7 @@ function addListDir(idlist,dirname){
     var newLink = document.createElement('a');
 
     // Set the href attribute of the <a> element
-    newLink.href = './'+dirname; // Set the URL you want the link to point to
+    newLink.href = url; // Set the URL you want the link to point to
 
     // Set the text content of the <a> element
     newLink.textContent = dirname;
