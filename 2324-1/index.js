@@ -1,6 +1,5 @@
 import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
-import {setInner,addChild } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
-
+import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 
 let path=window.location.pathname.replace("/sk", "");
 let url = "https://api.github.com/repos/repoulbi/sk/contents/"+path;
