@@ -15,7 +15,7 @@ function renderHTML(result){
 
 function isiRow(tree){
     if (tree.name.includes(".pdf")){
-        let url=urlPDFViewer+"/sk/"+tree.path;
+        let url=urlPDFViewer+btoa("/sk/"+tree.path);
         addListDir("dirlist",tree.name,url);
     }
 
