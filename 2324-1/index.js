@@ -3,7 +3,6 @@ import {setInner,addChild } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.
 
 
 let path=window.location.pathname.replace("/sk", "");
-//let path = path.replace("/sk", "");
 let url = "https://api.github.com/repos/repoulbi/sk/contents/"+path;
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 
