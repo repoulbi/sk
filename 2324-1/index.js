@@ -15,7 +15,7 @@ function renderHTML(result){
 
 function isiRow(tree){
     if (tree.name.includes(".pdf")){
-        addListDir("dirlist",tree.path);
+        addListDir("dirlist",tree.name);
     }
 
 }
