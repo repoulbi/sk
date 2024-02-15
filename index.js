@@ -3,6 +3,7 @@ import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/eleme
 import {getHash,onHashChange} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
 import {loading} from "./loading.js";
 
+document.title = "Repositori Surat Keputusan";
 const repoOrg = "repoulbi";
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 
