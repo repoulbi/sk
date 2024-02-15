@@ -1,7 +1,8 @@
 import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
 import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
+import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
 
-let path=window.location.pathname.replace("/sk", "");
+let path=getHash();
 let url = "https://api.github.com/repos/repoulbi/sk/contents/"+path;
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 
@@ -37,7 +38,7 @@ function addListDir(idlist,dirname){
     var newLink = document.createElement('a');
 
     // Set the href attribute of the <a> element
-    newLink.href = '/sk/'+dirname; // Set the URL you want the link to point to
+    newLink.href = '#'+dirname; // Set the URL you want the link to point to
 
     // Set the text content of the <a> element
     newLink.textContent = "> "+dirname;
