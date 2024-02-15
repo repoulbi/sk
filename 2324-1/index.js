@@ -40,7 +40,7 @@ function addListDir(idlist,dirname){
     newLink.href = '/'+dirname; // Set the URL you want the link to point to
 
     // Set the text content of the <a> element
-    newLink.textContent = dirname;
+    newLink.textContent = "> "+dirname;
 
     // Append the <a> element to the <li> element
     newListItem.appendChild(newLink);
