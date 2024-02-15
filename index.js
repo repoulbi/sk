@@ -13,7 +13,7 @@ const apiURL="https://api.github.com/repos/"+repoOrg+""+repoPathName+"contents/"
 const idList = "dirlist";
 
 document.title = title;
-setInner=title;
+setInner("title",title);
 onHashChange(runMain);
 runMain();
 
