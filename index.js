@@ -1,7 +1,7 @@
 import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
 import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 import {getHash,onHashChange} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
-import {loading} from "/loading.js";
+import {loading} from "./loading.js";
 
 const repoOrg = "repoulbi";
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
