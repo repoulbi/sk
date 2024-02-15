@@ -1,12 +1,17 @@
 import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
 import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
-import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
+import {getHash,onHashChange} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
 
 let path=getHash();
 let url = "https://api.github.com/repos/repoulbi/sk/contents/"+path;
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 
-get(url,renderHTML);
+onHashChange(runMain);
+
+function runMain(){
+    get(url,renderHTML);
+}
+
 
 function renderHTML(result){
     console.log(result);
