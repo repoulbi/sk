@@ -37,7 +37,7 @@ function addListDir(idlist,dirname){
     var newLink = document.createElement('a');
 
     // Set the href attribute of the <a> element
-    newLink.href = '/'+dirname; // Set the URL you want the link to point to
+    newLink.href = '/sk/'+dirname; // Set the URL you want the link to point to
 
     // Set the text content of the <a> element
     newLink.textContent = "> "+dirname;
