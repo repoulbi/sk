@@ -11,6 +11,7 @@ const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
 const repoPathName = window.location.pathname;
 const apiURL="https://api.github.com/repos/"+repoOrg+""+repoPathName+"contents/";
 const idList = "dirlist";
+const idCurrentDir = "currentdir";
 
 document.title = title;
 setInner("title",title);
@@ -18,6 +19,7 @@ onHashChange(runMain);
 runMain();
 
 function runMain(){
+    setInner(idCurrentDir,getHash());
     setInner(idList,loading);
     let url = apiURL+getHash();
     get(url,renderHTML);
