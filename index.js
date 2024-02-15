@@ -13,6 +13,7 @@ onHashChange(runMain);
 runMain();
 
 function runMain(){
+    setInner(idList,"");
     let url = apiURL+getHash();
     get(url,renderHTML);
 }
