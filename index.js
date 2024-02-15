@@ -2,11 +2,15 @@ import {get} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
 import {setInner,addChild,hide } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 import {getHash,onHashChange} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
 
-const apiURL="https://api.github.com/repos/repoulbi/sk/contents/";
+const repoOrg = "repoulbi";
 const urlPDFViewer = "https://repo.ulbi.ac.id/view/#";
-const repoName = apiURL.split("/")[5];
+
+const repoPathName = window.location.pathname;
+const apiURL="https://api.github.com/repos/"+repoOrg+""+repoPathName+"contents/";
+const idList = "dirlist";
 
 onHashChange(runMain);
+runMain();
 
 function runMain(){
     let url = apiURL+getHash();
@@ -21,10 +25,10 @@ function renderHTML(result){
 
 function isiRow(tree){
     if (tree.type === "dir"){
-        addListDir("dirlist",tree.path);
+        addListDir(idList,tree.path);
     } else if ((tree.name.includes(".pdf")) && (tree.type==="file")){
-        let url=urlPDFViewer+btoa("#/"+repoName+"/"+tree.path);
-        addListFilePdf("dirlist",tree.name,url);
+        let url=urlPDFViewer+btoa("#"+repoPathName+""+tree.path);
+        addListFilePdf(idList,tree.name,url);
     }
 
 }
