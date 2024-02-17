@@ -124,6 +124,9 @@ function addListFilePdf(idlist,dirname,url){
     // Set the href attribute of the <a> element
     newLink.href = url; // Set the URL you want the link to point to
 
+    // Set the target attribute to "_blank" to open in a new tab
+    newLink.target = '_blank';
+
     // Append the <box-icon> element to the <a> element
     newLink.appendChild(boxIcon);
 
