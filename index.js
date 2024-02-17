@@ -119,7 +119,7 @@ function addListFilePdf(idlist,dirname,url){
 
     // Create a new <box-icon> element
     var boxIcon = document.createElement('box-icon');
-    boxIcon.setAttribute('name', 'file-pdf'); // Set the box-icon name attribute
+    boxIcon.setAttribute('name', 'file'); // Set the box-icon name attribute
 
     // Set the href attribute of the <a> element
     newLink.href = url; // Set the URL you want the link to point to
