@@ -89,7 +89,7 @@ function addListDir(idlist,dirname){
     newLink.appendChild(boxIcon);
 
     // Append the text content (directory name) to the <a> element
-    newLink.appendChild(document.createTextNode(' ' + dirname));
+    newLink.appendChild(document.createTextNode(' ' + dirname.split("/").pop()));
 
     // Append the <a> element to the <li> element
     newListItem.appendChild(newLink);
