@@ -28,6 +28,7 @@ function runMain(){
 
 function navDir(){
     let currentDirArray=getHash().split("/");
+    currentDirArray = currentDirArray.filter(item => item);
     let text = "";
     for (let i = 0; i < currentDirArray.length; i++) {
         text += "/"+currentDirArray[i];
@@ -35,7 +36,6 @@ function navDir(){
         link.href = '#'+text;
         link.textContent = "/"+currentDirArray[i];
         document.getElementById(idCurrentDir).appendChild(link);
-        
     }
 
 }
