@@ -78,11 +78,18 @@ function addListDir(idlist,dirname){
     // Create a new <a> element
     var newLink = document.createElement('a');
 
+    // Create a new <box-icon> element
+    var boxIcon = document.createElement('box-icon');
+    boxIcon.setAttribute('name', 'folder'); // Set the box-icon name attribute
+
     // Set the href attribute of the <a> element
     newLink.href = '#'+dirname; // Set the URL you want the link to point to
 
-    // Set the text content of the <a> element
-    newLink.textContent = "<box-icon name='folder'></box-icon> "+dirname;
+    // Append the <box-icon> element to the <a> element
+    newLink.appendChild(boxIcon);
+
+    // Append the text content (directory name) to the <a> element
+    newLink.appendChild(document.createTextNode(' ' + dirname));
 
     // Append the <a> element to the <li> element
     newListItem.appendChild(newLink);
