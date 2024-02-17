@@ -42,16 +42,15 @@ function navDir(){
 
 function renderHTML(result){
     console.log(result);
-    if ((!"message" in result)&&(!"documentation_url" in result)){
-        result.forEach(isiRow);
-        hide("loading");
-    }else{
+    if (("message" in result)&&("documentation_url" in result)){
         Swal.fire({
             icon: "error",
             title: "Terdeteksi Spam",
             text: "Mohon tunggu 1 jam lagi untuk mengakses"
           });
-
+    }else{
+        result.forEach(isiRow);
+        hide("loading");
     }
     
 }
