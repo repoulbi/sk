@@ -19,10 +19,25 @@ onHashChange(runMain);
 runMain();
 
 function runMain(){
-    setInner(idCurrentDir,getHash());
+    navDir();
     setInner(idList,loading);
     let url = apiURL+getHash();
     get(url,renderHTML);
+}
+
+function navDir(){
+    let currentDirArray=getHash().split("/");
+    let text = "";
+    for (let i = 0; i < currentDirArray.length; i++) {
+        text += currentDirArray[i]+"/";
+        const link = document.createElement('a');
+        link.href = '#'+text;
+        link.textContent = currentDirArray[i];
+        document.getElementById(idCurrentDir).appendChild(link);
+        
+    }
+    //setInner(idCurrentDir,getHash());
+
 }
 
 function renderHTML(result){
