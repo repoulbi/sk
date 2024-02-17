@@ -19,7 +19,7 @@ onHashChange(runMain);
 runMain();
 
 function runMain(){
-    setInner(idCurrentDir,'');
+    setInner(idCurrentDir,"<box-icon name='folder-open' ></box-icon>");
     navDir();
     setInner(idList,loading);
     let url = apiURL+getHash();
