@@ -19,6 +19,7 @@ onHashChange(runMain);
 runMain();
 
 function runMain(){
+    setInner(idCurrentDir,'');
     navDir();
     setInner(idList,loading);
     let url = apiURL+getHash();
@@ -32,11 +33,10 @@ function navDir(){
         text += currentDirArray[i]+"/";
         const link = document.createElement('a');
         link.href = '#'+text;
-        link.textContent = currentDirArray[i];
+        link.textContent = currentDirArray[i]+"/";
         document.getElementById(idCurrentDir).appendChild(link);
         
     }
-    //setInner(idCurrentDir,getHash());
 
 }
 
