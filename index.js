@@ -42,8 +42,18 @@ function navDir(){
 
 function renderHTML(result){
     console.log(result);
-    result.forEach(isiRow);
-    hide("loading");
+    if ((!"message" in result)&&(!"documentation_url" in result)){
+        result.forEach(isiRow);
+        hide("loading");
+    }else{
+        Swal.fire({
+            icon: "error",
+            title: "Terdeteksi Spam",
+            text: "Mohon tunggu 1 menit lagi untuk mengakses"
+          });
+
+    }
+    
 }
 
 function isiRow(tree){
