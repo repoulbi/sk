@@ -46,7 +46,7 @@ function renderHTML(result){
         Swal.fire({
             icon: "error",
             title: "Terdeteksi Spam",
-            text: "Mohon tunggu 1 jam lagi untuk mengakses"
+            text: "Mohon tunggu 1 jam lagi untuk mengakses, atau ganti koneksi internet anda."
           });
     }else{
         result.forEach(isiRow);
