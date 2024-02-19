@@ -105,7 +105,7 @@ function addListDir(idlist,dirname){
     boxIcon.setAttribute('name', 'folder'); // Set the box-icon name attribute
 
     // Set the href attribute of the <a> element
-    newLink.href = '#'+dirname; // Set the URL you want the link to point to
+    newLink.href = '#/'+dirname; // Set the URL you want the link to point to
 
     // Append the <box-icon> element to the <a> element
     newLink.appendChild(boxIcon);
