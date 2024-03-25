@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Repository Ulbi admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="">
+        <meta name="author" content="LEFT4CODE">
+        <title>File Manager SK</title>
+        <link rel="stylesheet" href="dist/css/app.css" />
+    </head>
+    <body class="app">
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="Repository Ulbi Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="top-menu-file-manager.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Dashboard </div>
+                    </a>
+                </li>
+                
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="border-b border-theme-24 -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+            <div class="top-bar-boxed flex items-center">
+                <a href="" class="-intro-x hidden md:flex">
+                    <img alt="Repository Ulbi Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                    <span class="text-white text-lg ml-3"> Repository<span class="font-medium"> Ulbi</span> </span>
+                </a>
+                
+                <!-- <div class="-intro-x breadcrumb breadcrumb--light mr-auto"> <a href="" class="">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">Dashboard</a> </div>
+                -->
+               
+               
+                
+                <div class="intro-x dropdown w-8 h-8 relative">
+                   
+                    <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+                        <div class="dropdown-box__content box bg-theme-38 text-white">
+                            <div class="p-4 border-b border-theme-40">
+                                <div class="font-medium">Al Pacino</div>
+                                <div class="text-xs text-theme-41">Frontend Engineer</div>
+                            </div>
+                            <div class="p-2">
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </div>
+                            <div class="p-2 border-t border-theme-40">
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <!-- BEGIN: Top Menu -->
+        <nav class="top-nav">
+            <ul>
+                <li>
+                    <a href="top-menu-file-manager.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="top-menu__title"> Dashboard </div>
+                    </a>
+            </ul>
+        </nav>
+        <!-- END: Top Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <div class="grid grid-cols-12 gap-6 mt-8">
+                <div class="col-span-12 lg:col-span-3 xxl:col-span-2">
+                    <h2 class="intro-y text-lg font-medium mr-auto mt-2">
+                        File Manager
+                    </h2>
+                    <!-- BEGIN: File Manager Menu -->
+                    <div class="intro-y box p-5 mt-6">
+                        <div class="mt-1">
+                            <a href="" class="flex items-center px-3 py-2 rounded-md bg-theme-1 text-white font-medium"> <i class="w-4 h-4 mr-2" data-feather="file"></i> Documents </a>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-9 xxl:col-span-10">
+                    <div class="intro-y flex flex-col-reverse sm:flex-row items-center">
+                        <div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0">
+                            <i class="w-4 h-4 absolute my-auto inset-y-0 ml-3 left-0 z-10 text-gray-700" data-feather="search"></i> 
+                            <input type="text" class="input w-full sm:w-64 box px-10 text-gray-700 placeholder-theme-13" placeholder="Search files">
+                            <div class="inbox-filter dropdown absolute inset-y-0 mr-3 right-0 flex items-center">
+                                <i class="dropdown-toggle w-4 h-4 cursor-pointer text-gray-700" data-feather="chevron-down"></i> 
+                                <div class="inbox-filter__dropdown-box dropdown-box mt-10 absolute top-0 left-0 z-20">
+                                    <div class="dropdown-box__content box p-5">
+                                        <div class="grid grid-cols-12 gap-4 row-gap-3">
+                                            <div class="col-span-6">
+                                                <div class="text-xs">File Name</div>
+                                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Type the file name">
+                                            </div>
+                                            <div class="col-span-6">
+                                                <div class="text-xs">Shared With</div>
+                                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="example@gmail.com">
+                                            </div>
+                                            <div class="col-span-6">
+                                                <div class="text-xs">Created At</div>
+                                                <input type="text" class="input w-full border mt-2 flex-1" placeholder="Important Meeting">
+                                            </div>
+                                            <div class="col-span-6">
+                                                <div class="text-xs">Size</div>
+                                                <select class="input w-full border mt-2 flex-1">
+                                                    <option>10</option>
+                                                    <option>25</option>
+                                                    <option>35</option>
+                                                    <option>50</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-span-12 flex items-center mt-3">
+                                                <button class="button w-32 justify-center block bg-gray-200 text-gray-600 ml-auto">Create Filter</button>
+                                                <button class="button w-32 justify-center block bg-theme-1 text-white ml-2">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-auto flex">
+                            <button class="button text-white bg-theme-1 shadow-md mr-2">Upload New Files</button>
+                            
+                        </div>
+                    </div>
+                    <!-- END: File Manager Filter -->
+                    <!-- BEGIN: Directory & Files -->
+                    <div id="fileExplorer" class="intro-y grid grid-cols-12 gap-3 sm:gap-6 mt-5">
+                        
+                        <!-- <div class="intro-y col-span-6 sm:col-span-4 md:col-span-3 xxl:col-span-2">
+                            <div class="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in">
+                                <div class="absolute left-0 top-0 mt-3 ml-3">
+                                    <input class="input border border-gray-500" type="checkbox">
+                                </div>
+                                <a href="" class="w-3/5 file__icon file__icon--directory mx-auto"></a> <a href="" class="block font-medium mt-4 text-center truncate">Repository</a> 
+                                <div class="text-gray-600 text-xs text-center">20 KB</div>
+                               
+                            </div>
+                        </div>
+                        
+                        <div class="intro-y col-span-6 sm:col-span-4 md:col-span-3 xxl:col-span-2">
+                            <div class="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in">
+                                <div class="absolute left-0 top-0 mt-3 ml-3">
+                                    <input class="input border border-gray-500" type="checkbox">
+                                </div>
+                                <a href="" class="w-3/5 file__icon file__icon--image mx-auto">
+                                    <div class="file__icon--image__preview image-fit">
+                                        <img alt="Repository Ulbi Tailwind HTML Admin Template" src="dist/images/preview-12.jpg">
+                                    </div>
+                                </a>
+                                <a href="" class="block font-medium mt-4 text-center truncate">preview-12.jpg</a> 
+                                <div class="text-gray-600 text-xs text-center">1 MB</div>
+                                
+                            </div>
+                        </div>
+                       
+                        <div class="intro-y col-span-6 sm:col-span-4 md:col-span-3 xxl:col-span-2">
+                            <div class="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in">
+                                <div class="absolute left-0 top-0 mt-3 ml-3">
+                                    <input class="input border border-gray-500" type="checkbox">
+                                </div>
+                                <a href="" class="w-3/5 file__icon file__icon--file mx-auto">
+                                    <div class="file__icon__file-name">Pdf</div>
+                                </a>
+                                <a href="" class="block font-medium mt-4 text-center truncate">datask.pdf</a> 
+                                <div class="text-gray-600 text-xs text-center">1 KB</div>
+                                
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                    <!-- END: Directory & Files -->
+                    <!-- BEGIN: Pagination -->
+                    <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-6">
+                        <ul class="pagination">
+                            <li>
+                                <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-left"></i> </a>
+                            </li>
+                            <li>
+                                <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-left"></i> </a>
+                            </li>
+                            <li> <a class="pagination__link" href="">...</a> </li>
+                            <li> <a class="pagination__link" href="">1</a> </li>
+                            <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+                            <li> <a class="pagination__link" href="">3</a> </li>
+                            <li> <a class="pagination__link" href="">...</a> </li>
+                            <li>
+                                <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-right"></i> </a>
+                            </li>
+                            <li>
+                                <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-right"></i> </a>
+                            </li>
+                        </ul>
+                        <select class="w-20 input box mt-3 sm:mt-0">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>35</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+                    <!-- END: Pagination -->
+                </div>
+            </div>
+        </div>
+        <!-- END: Content -->
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- <script src="craft.js" type="module"> </script> -->
+        <!-- END: JS Assets-->
+    </body>
+</html>
